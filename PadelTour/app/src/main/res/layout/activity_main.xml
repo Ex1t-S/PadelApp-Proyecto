@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- Sidebar izquierda -->
+
+    <!-- Contenido principal (lista de canchas) -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#EEEEEE"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ESPACIADOR: ocupa todo el espacio posible -->
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <!-- Foto de perfil -->
+
+        <!-- Botón: Turnos (reservas actuales) -->
+
+        <!-- Botón: Mis datos -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnReservas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Turnos" />
+
+        <Button
+            android:id="@+id/btnMisDatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Mis Datos" />
+
+        <!-- Botón: Historial -->
+
+        <!-- Botón: Notificaciones -->
+
+        <Button
+            android:id="@+id/btnPagos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Clases" />
+
+        <Button
+            android:id="@+id/btnNotificaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Torneos"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Botón: Pagos -->
+
+        <!-- Botón: Configuración -->
+
+        <!-- Espaciador para separar el logout del resto -->
+
+        <!-- Botón: Cerrar sesión -->
+
+        <Button
+            android:id="@+id/btnHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Historial" />
+
+        <Button
+            android:id="@+id/btnConfiguracion"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Configuración" />
+
+        <View
+            android:layout_width="107dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Cerrar sesión"
+            android:textColor="#C62828" />
+
+        <!-- Agregá más botones aquí si querés -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título de la sección -->
+        <TextView
+            android:id="@+id/tituloSeccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="EfectoPadel"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Aquí el contenido dinámico -->
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>
